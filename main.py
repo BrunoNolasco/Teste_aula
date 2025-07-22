@@ -39,8 +39,17 @@ def ouvir_historia(nome):
     else:
         print("Opção inválida. Escolha entre: cavaleiro, princesa ou mágico.")
 
-
+def novo_estado():
+    n_estado = input("Ficou feliz em ler a história? (sim ou não): ").strip().lower()
+    
+    if n_estado == "sim":
+        print("Que bom, fico muito feliz em ajudar!")
+    elif n_estado == "não":
+        print("Não tem problema, leia outra hístoria, tenho certeza que vai ajudar!")
+    else:
+        print("Resposta inválida. Por favor, responda com 'sim' ou 'não'.")
+        
 estado()
 nome_usuario = qual_nome()
-while True:
-    ouvir_historia(nome_usuario) 
+ouvir_historia(nome_usuario) 
+novo_estado()
