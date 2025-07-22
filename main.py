@@ -32,7 +32,9 @@ def ouvir_historia(nome):
             f"e quebrou o feitiço. Voltou ao seu reino com histórias incríveis. Moral: Curiosidade e coragem abrem caminhos inesperados.")
 
     elif escolha_historia == "mágico":
-        print("")
+        print(f"Era uma vez um mágico chamado {nome}. Ele não era o mais poderoso, mas era o mais criativo. Um dia, perdeu a voz e não podia mais fazer seus feitiços. "
+            f"Em vez de desistir, começou a desenhar símbolos mágicos com luz. Descobriu que podia criar coisas ainda mais incríveis sem dizer uma palavra. "
+            f"Os outros mágicos riram no começo, mas logo aprenderam com ele. Moral: Quando algo falta, a criatividade pode ser a sua maior magia.")
 
     else:
         print("Opção inválida. Escolha entre: cavaleiro, princesa ou mágico.")
