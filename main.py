@@ -7,8 +7,13 @@ def estado():
         print("Que pena, mas não se preocupe, vamos melhorá-lo!")
     else:
         print("Resposta inválida. Por favor, responda com 'sim' ou 'não'.")
+        
+def qual_nome():
+    nome = input("Qual o seu nome?").strip().lower()
+    print(f"Eu adoro o seu nome, {nome}!")
 
 estado()
+qual_nome()
 
 
 #
