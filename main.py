@@ -26,7 +26,10 @@ def ouvir_historia(nome):
             f"O dragão dormiu feliz, e {nome} virou herói — sem lutar. Moral: Nem todo problema precisa de força. Às vezes, basta escutar.")
 
     elif escolha_historia == "princesa":
-        print("")
+        print(f"Era uma vez uma princesa chamada {nome}. Ao contrário das outras princesas, ela gostava de explorar florestas e resolver mistérios. "
+            f"Um dia, ela descobriu uma ponte que aparecia só à noite. Curiosa, atravessou e encontrou um mundo mágico, onde o tempo parava. "
+            f"Lá, percebeu que os moradores estavam presos por um feitiço. Com inteligência e coragem, {nome} decifrou o enigma de um antigo livro "
+            f"e quebrou o feitiço. Voltou ao seu reino com histórias incríveis. Moral: Curiosidade e coragem abrem caminhos inesperados.")
 
     elif escolha_historia == "mágico":
         print("")
