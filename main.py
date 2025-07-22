@@ -7,35 +7,38 @@ def estado():
         print("Que pena, mas não se preocupe, vamos melhorá-lo!")
     else:
         print("Resposta inválida. Por favor, responda com 'sim' ou 'não'.")
-        
+
 def qual_nome():
-    nome = input("Qual o seu nome?").strip().lower()
+    nome = input("Qual o seu nome?: ").strip().capitalize()
     print(f"Eu adoro o seu nome, {nome}!")
-    
-def ouvir_historia():
-    print("Qual tipo de história você gostaria de ouvir?")
-    escolha_historia = input("cavaleiro, princesa ou mágico?").strip().lower()
+    return nome
+
+def ouvir_historia(nome):
+    print("Qual tipo de história você gostaria de ouvir? ")
+    escolha_historia = input("cavaleiro, princesa ou mágico?: ").strip().lower()
     
     if escolha_historia == "cavaleiro":
-        print("Era uma vez um cavaleiro chamado Hugo. Ele era corajoso, mas nunca tinha enfrentado um dragão. "
-            "Um dia, o rei pediu sua ajuda. Um dragão está dormindo no meio da estrada principal! Ninguém consegue passar! "
-            "Hugo foi até lá montado em seu cavalo. Quando chegou, viu o dragão roncando alto. Em vez de usar a espada, "
-            "Hugo teve uma ideia. Ele assobiou uma música bem calma. O dragão abriu os olhos devagar… e começou a chorar. "
-            "— Eu só queria um lugar quieto pra dormir... Hugo levou o dragão até uma caverna bem longe da cidade. "
-            "O dragão dormiu feliz, e Hugo virou herói — sem lutar. Moral: Nem todo problema precisa de força. Às vezes, basta escutar.")
+        print(f"Era uma vez um cavaleiro chamado {nome}. Ele era corajoso, mas nunca tinha enfrentado um dragão. "
+            f"Um dia, o rei pediu sua ajuda. Um dragão está dormindo no meio da estrada principal! Ninguém consegue passar! "
+            f"{nome} foi até lá montado em seu cavalo. Quando chegou, viu o dragão roncando alto. Em vez de usar a espada, "
+            f"{nome} teve uma ideia. Ele assobiou uma música bem calma. O dragão abriu os olhos devagar… e começou a chorar. "
+            f"— Eu só queria um lugar quieto pra dormir... {nome} levou o dragão até uma caverna bem longe da cidade. "
+            f"O dragão dormiu feliz, e {nome} virou herói — sem lutar. Moral: Nem todo problema precisa de força. Às vezes, basta escutar.")
 
     elif escolha_historia == "princesa":
-        print
-        
+        print("")
+
     elif escolha_historia == "mágico":
-        print
-        
+        print("")
+
     else:
         print("Opção inválida. Escolha entre: cavaleiro, princesa ou mágico.")
 
+
 estado()
-qual_nome()
-ouvir_historia()
+nome_usuario = qual_nome()
+ouvir_historia(nome_usuario)
+
 
 
 #
