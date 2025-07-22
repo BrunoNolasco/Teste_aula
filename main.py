@@ -42,24 +42,5 @@ def ouvir_historia(nome):
 
 estado()
 nome_usuario = qual_nome()
-ouvir_historia(nome_usuario)
-
-
-
-#
-#
-#
-#
-#
-#print("Olá pessoal!")
-#
-#
-#
-#
-#
-#
-#nome: str = input("Qual é o seu nome? ")
-#print(f"Olá, {nome}!")
-#
-#
-#print("Tudo bem?")
+while True:
+    ouvir_historia(nome_usuario) 
