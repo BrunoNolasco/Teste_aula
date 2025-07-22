@@ -24,7 +24,14 @@ def ouvir_historia():
             "— Eu só queria um lugar quieto pra dormir... Hugo levou o dragão até uma caverna bem longe da cidade. "
             "O dragão dormiu feliz, e Hugo virou herói — sem lutar. Moral: Nem todo problema precisa de força. Às vezes, basta escutar.")
 
-
+    elif escolha_historia == "princesa":
+        print
+        
+    elif escolha_historia == "mágico":
+        print
+        
+    else:
+        print("Opção inválida. Escolha entre: cavaleiro, princesa ou mágico.")
 
 estado()
 qual_nome()
